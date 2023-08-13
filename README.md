@@ -11,9 +11,59 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`connect(...)`](#connect)
+* [`subscribe(...)`](#subscribe)
+* [`publish(...)`](#publish)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### connect(...)
+
+```typescript
+connect(options: { key: string; cert: string; ca: string; clientId: string; protocol: string; clean: boolean; host: string; }) => Promise<{ status: string; }>
+```
+
+| Param         | Type                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **`options`** | <code>{ key: string; cert: string; ca: string; clientId: string; protocol: string; clean: boolean; host: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ status: string; }&gt;</code>
+
+--------------------
+
+
+### subscribe(...)
+
+```typescript
+subscribe(options: { topic: string; }) => Promise<{ status: string; }>
+```
+
+| Param         | Type                            |
+| ------------- | ------------------------------- |
+| **`options`** | <code>{ topic: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ status: string; }&gt;</code>
+
+--------------------
+
+
+### publish(...)
+
+```typescript
+publish(options: { message: string; topic: string; }) => Promise<{ status: string; }>
+```
+
+| Param         | Type                                             |
+| ------------- | ------------------------------------------------ |
+| **`options`** | <code>{ message: string; topic: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ status: string; }&gt;</code>
+
+--------------------
+
 </docgen-api>
